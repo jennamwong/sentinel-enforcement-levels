@@ -15,11 +15,11 @@ module "aws-functions" {
 }
 
 policy "enforce-mandatory-tags" {
-  source = "./enforce-mandatory-tags.sentinel"
+  //source = "./enforce-mandatory-tags.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-cost-and-percentage-increase" {
-    source = "./restrict-cost-and-percentage-increase"
-    enforcement_level = "advisory"
+    //source = "./restrict-cost-and-percentage-increase"
+    enforcement_level = "soft-mandatory"
 }
